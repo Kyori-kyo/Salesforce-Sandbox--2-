@@ -1,5 +1,5 @@
 @isTest
-private with sharing class ParkLocatorTest {
+private class ParkLocatorTest {
     static void testCallout () {
         Test.setMock(WebServiceMock.class, new ParkServiceMock());
         String country = 'United States';
