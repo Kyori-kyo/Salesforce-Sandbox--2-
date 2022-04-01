@@ -16,8 +16,13 @@ global with sharing class CaseManager {
     }
 
     @HttpPost
-    global static ID createCase(String subject, String status, String origin, String priority) {
-        Case thisCase = new createCase(
+    global static ID createCase(
+        String subject, 
+        String status, 
+        String origin, 
+        String priority) {
+            
+        Case thisCase = new Case (
             Subject = subject, 
             Status = status, 
             Origin = origin, 
@@ -40,7 +45,7 @@ global with sharing class CaseManager {
     @HttpPut
     global static ID upsertCase(String subject, String status,
     String origin, String priority, String id) {
-        Case thisCase = new createCase(
+        Case thisCase = new Case (
             Id = id,
             Subject = subject, 
             Status = status, 
