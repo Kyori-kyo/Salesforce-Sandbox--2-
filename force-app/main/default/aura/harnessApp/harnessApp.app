@@ -1,3 +1,4 @@
 <aura:application>
-  <c:helloWorld />
+  <c:camping />
+  <c:helloWorld2 />
 </aura:application>

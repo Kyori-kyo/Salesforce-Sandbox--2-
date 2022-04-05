@@ -10,4 +10,3 @@ global class AnimalLocatorMock implements HttpCalloutMock {
         return response; 
     }
 }
-
